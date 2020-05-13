@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ProfitMeal - личный кабинет</title>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta name="keywords" content="ProMeal">
+    <meta name="description" content="правильное питание с доставкой на дом">
+    <meta name="viewport"
+        content="minimum-scale=1.0, width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="320">
+    <link rel="icon" href="./media/icons/favicon.ico" type="image/x-icon">
+
+    <!-- Select2 CSS -->
+    <link rel="stylesheet" type="text/css" href="./css/plugins/select2.min.css">
+    <!--Modal CSS-->
+    <link rel="stylesheet" type="text/css" href="./css/plugins/jquery.modal.min.css">
+    <!-- Normalize CSS-->
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css">
+    <!-- Fonts CSS-->
+    <link rel="stylesheet" type="text/css" href="./css/fonts.css">
+    <!-- FontAwesome CSS-->
+    <link rel="stylesheet" type="text/css" href="./fonts/font-awesome/css/font-awesome.min.css">
+    <!-- Animate CSS-->
+    <link rel="stylesheet" type="text/css" href="./css/plugins/animate.min.css">
+    <!-- Style CSS-->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body style="background-color: #f0f0f0">
+    <header class="not-index">
+        <div class="new-container">
+            <div class="header flex-block">
+                <a class="header_logo" href="/">
+                    <img src="./media/icons/logo.png" alt="ProFitMeal">
+                </a>
+                <div class="header_language">
+                    <select class="header_language-select default-select">
+                        <option value="RU">RU</option>
+                        <option value="UA">UA</option>
+                    </select>
+                </div>
+                <nav class="header_menu">
+                    <a class="header_menu-link order" href="javascript: void(0)" count="2">Мои заказы</a>
+                    <a class="header_menu-link" href="javascript: void(0)">Заказать питание</a>
+                    <a class="header_menu-link" href="javascript: void(0)">История заказов</a>
+                </nav>
+                <div class="header_inprivate-wrapper flex-block">
+                    <div class="header_inprivate-profile">
+                        <span class="name">Дмитрий</span>
+                        <span class="email" title="dkarts@gmail.com">dkarts@gmail.com</span>
+                    </div>
+                    <a class="header_inprivate-link edit" href="javascript: void(0)">
+                        <img src="./media/icons/edit.png" alt="">
+                    </a>
+                    <a class="header_inprivate-link avatar" href="javascript: void(0)">
+                        <img src="./media/icons/avatar.png" alt="">
+                    </a>
+                    <a class="header_inprivate-link exit" href="javascript: void(0)">
+                        <img src="./media/icons/exit.png" alt="">
+                    </a>
+                </div>
+                <a href="javascript: void(0)" class="header_adaptive-menu-link"><span></span></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="new-container">
+            <h2 class="heading heading_black main-title">Личная информация</h2>
+        </div>
+        <section>
+            <div class="new-container">
+                <div class="profile flex-block">
+                    <form class="profile-left_wrapper form-profile-main" id="form-profile-main" method="POST" action="">
+                        <div class="profile-main_wrapper">
+                            <h2 class="profile-heading">Основная информация</h2>
+                            <div class="default-input_wrapper w-50">
+                                <span>Имя</span>
+                                <div class="input-with-icon">
+                                    <input type="text" class="default-input w-100 text" name="Имя" id="profile-name">
+                                    <span class="lock"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                            <div class="default-input_wrapper w-50">
+                                <span>Фамилия</span>
+                                <div class="input-with-icon">
+                                    <input type="text" class="default-input w-100 text" name="Фамилия"
+                                        id="profile-surname">
+                                    <span class="lock"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                            <div class="profile-main_born">
+                                <span>Дата рождения</span>
+                                <div class="default-input_wrapper">
+                                    <input type="tel" class="default-input number w-100" maxlength="2"
+                                        name="День рождения" id="profile-born_day" inputmode="verbatim">
+                                </div>
+                                <div class="default-select_wrapper">
+                                    <select class="default-select">
+                                        <option value="январь">января</option>
+                                        <option value="февраль">февраля</option>
+                                        <option value="март">марта</option>
+                                        <option value="апрель">апреля</option>
+                                        <option value="май">мая</option>
+                                        <option value="июнь">июня</option>
+                                        <option value="июль">июля</option>
+                                        <option value="август">августа</option>
+                                        <option value="сентябрь">сентября</option>
+                                        <option value="октябрь">октября</option>
+                                        <option value="ноябрь">ноября</option>
+                                        <option value="декабрь">декабря</option>
+                                    </select>
+                                </div>
+                                <div class="default-input_wrapper">
+                                    <input type="tel" class="default-input number w-100" maxlength="4"
+                                        name="Год рождения" id="profile-born_year" inputmode="verbatim">
+                                </div>
+                            </div>
+                            <div class="profile-main_gender">
+                                <span>Пол</span>
+                                <div class="default-radio_wrapper">
+                                    <input type="radio" class="default-radio" id="gender-man" name="gender-radio">
+                                    <label for="gender-man" class="default-radio_label w-100">Мужской</label>
+                                </div>
+                                <div class="default-radio_wrapper">
+                                    <input type="radio" class="default-radio" id="gender-woman" name="gender-radio">
+                                    <label for="gender-woman" class="default-radio_label w-100">Женский</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-contacts_wrapper">
+                            <h2 class="profile-heading">Контакты</h2>
+                            <div class="default-input_wrapper w-100">
+                                <span>Основной телефон</span>
+                                <div class="input-with-icon">
+                                    <input type="tel" class="default-input phone w-100" name="Номер телефона"
+                                        id="profile-phonemain" value="+38 (063) 544-45-67" readonly>
+                                    <span class="lock"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                            <div class="profile-contact_addphone">
+                                <span>Дополнительные номера</span>
+                                <div class="default-input_wrapper w-100">
+                                    <div class="input-with-icon">
+                                        <input type="tel" class="default-input phone ua w-100" name="Номер телефона">
+                                        <span class="delete"><i class="fa fa-times" aria-hidden="true"></i></span>
+                                    </div>
+                                </div>
+                                <div class="default-input_wrapper w-100">
+                                    <div class="input-with-icon">
+                                        <input type="tel" class="default-input phone ua w-100" name="Номер телефона">
+                                        <span class="delete"><i class="fa fa-times" aria-hidden="true"></i></span>
+                                    </div>
+                                </div>
+                                <div class="btn_wrapper">
+                                    <a href="#private_modal"
+                                        class="btn-green btn_add w-100 text-center modal-open">Добавить
+                                        <span><i class="fa fa-plus" aria-hidden="true"></i></span></a>
+                                </div>
+                            </div>
+                            <div class="default-input_wrapper w-100">
+                                <span>E-mail</span>
+                                <input type="text" class="default-input email w-100" name="E-mail" id="profile-email">
+                            </div>
+                        </div>
+                        <div class="submit_wrapper">
+                            <button type="submit" form="form-profile-main" value="submit"
+                                class="btn btn-orange">сохранить</button>
+                        </div>
+                    </form>
+                    <div class="profile-right_wrapper">
+                        <div class="profile-score_wrapper">
+                            <h2 class="profile-heading">Бонусный счет</h2>
+                            <div class="profile-score_count">
+                                <span>75.25 грн.</span>
+                                <a href="#code_modal" class="modal-open red-link">Ввести бонусный код</a>
+                            </div>
+                            <div class="default-input_wrapper">
+                                <span>Пригласительный код</span>
+                                <div class="input-with-icon">
+                                    <input type="tel" class="default-input w-100" name="Пригласительный код"
+                                        id="bonus-code" value="Z832-9381" readonly>
+                                    <span class="copy" title="Скопировать код"><i class="fa fa-clone"
+                                            aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-address_wrapper flex-block">
+                            <h2 class="profile-heading">Мои адреса</h2>
+                            <div class="profile-address_item-block">
+                                <div class="profile-address_item flex-block active">
+                                    <div class="profile-address_item--img">
+                                        <img src="./media/icons/location.png" alt="">
+                                    </div>
+                                    <div class="profile-address_item--text">
+                                        Чернігів, Чернігів, Чернігівська обл., вул. Шевченко 25б, кв. 40
+                                    </div>
+                                    <span class="profile-address_item--bounce"></span>
+                                </div>
+                                <div class="profile-address_options">
+                                    <span class="options-dots"><i class="fa fa-ellipsis-v"
+                                            aria-hidden="true"></i></span>
+                                    <div class="options_wrapper">
+                                        <a href="javascript: void(0)" class="options_wrapper-link">Сделать основным</a>
+                                        <a href="javascript: void(0)" class="options_wrapper-link">Редактировать</a>
+                                        <a href="javascript: void(0)" class="options_wrapper-link">Удалить</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile-address_item-block">
+                                <div class="profile-address_item flex-block">
+                                    <div class="profile-address_item--img">
+                                        <img src="./media/icons/location.png" alt="">
+                                    </div>
+                                    <div class="profile-address_item--text">
+                                        Чернігів, Чернігів, Чернігівська обл., вул. Шевченко 25б, кв. 40
+                                    </div>
+                                    <span class="profile-address_item--bounce"></span>
+                                </div>
+                                <div class="profile-address_options">
+                                    <span class="options-dots"><i class="fa fa-ellipsis-v"
+                                            aria-hidden="true"></i></span>
+                                    <div class="options_wrapper">
+                                        <a href="javascript: void(0)" class="options_wrapper-link">Сделать основным</a>
+                                        <a href="javascript: void(0)" class="options_wrapper-link">Редактировать</a>
+                                        <a href="javascript: void(0)" class="options_wrapper-link">Удалить</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile-address_item-block">
+                                <div class="profile-address_item flex-block">
+                                    <div class="profile-address_item--img">
+                                        <img src="./media/icons/location.png" alt="">
+                                    </div>
+                                    <div class="profile-address_item--text">
+                                        Чернігів, Чернігів, Чернігівська обл., вул. Шевченко 25б, кв. 40
+                                    </div>
+                                    <span class="profile-address_item--bounce"></span>
+                                </div>
+                                <div class="profile-address_options">
+                                    <span class="options-dots"><i class="fa fa-ellipsis-v"
+                                            aria-hidden="true"></i></span>
+                                    <div class="options_wrapper">
+                                        <a href="javascript: void(0)" class="options_wrapper-link">Сделать основным</a>
+                                        <a href="javascript: void(0)" class="options_wrapper-link">Редактировать</a>
+                                        <a href="javascript: void(0)" class="options_wrapper-link">Удалить</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn_wrapper">
+                                <a href="#modal-address_add"
+                                    class="btn-green btn_add w-100 text-center modal-open">Добавить
+                                    адрес
+                                    <span><i class="fa fa-plus" aria-hidden="true"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer style="background-image: url(./media/img/footer-bg.png);">
+        <div class="new-container">
+            <div class="footer-top flex-block wow fadeInUp animated" data-wow-duration="1s" data-wow-delay="0"
+                data-wow-offset="50">
+                <div class="footer-copyright">
+                    <div class="footer-title">© 2020 ProfitMeal</div>
+                    <span>Cбалансированное питание для всех!</span>
+                </div>
+                <div class="footer-address">
+                    <div class="footer-title">Адрес</div>
+                    <span>г. Днепропетровск<br>
+                        ул. Шевченко, 34а</span>
+                </div>
+                <div class="footer-contacts flex-block">
+                    <div class="footer-title">Контакты</div>
+                    <a href="tel: 0933434343" class="footer-contacts_tel">(093) 343-43-43</a>
+                    <a href="mailto: profitmeal@gmail.com" class="footer-contacts_email">profitmeal@gmail.com</a>
+                </div>
+                <div class="footer-socials">
+                    <div class="footer-title">Следите за нами</div>
+                    <a href="javascript: void(0)" class="footer-socials_item">
+                        <img src="./media/icons/socials/vk.svg" alt="">
+                    </a>
+                    <a href="javascript: void(0)" class="footer-socials_item">
+                        <img src="./media/icons/socials/fb.svg" alt="">
+                    </a>
+                    <a href="javascript: void(0)" class="footer-socials_item">
+                        <img src="./media/icons/socials/instagram.svg" alt="">
+                    </a>
+                    <a href="javascript: void(0)" class="footer-socials_item">
+                        <img src="./media/icons/socials/twitter.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <img src="./media/icons/payment.png" alt="">
+                <a href="javascript: void(0)" class="link-green">Публичная оферта</a>
+                <a href="javascript: void(0)" class="link-white">Пользовательское соглашение</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="alert-messages">
+        <div class="message-error w-100">
+            Ошибка! Код не найден
+        </div>
+        <div class="message-success w-100">
+            Готово! Код успешно активирован
+        </div>
+    </div>
+
+    <div class="private-modal modal" id="private_modal">
+        <div class="modal_wrapper private-modal_wrapper">
+            <h2 class="modal_title extrabold">Добавить телефон</h2>
+            <form class="private-modal_form modal_form" name="private-modal_form" id="private-modal_form" method="POST"
+                action="">
+                <div class="default-input_wrapper">
+                    <span>Введите телефон</span>
+                    <input type="tel" class="default-input phone" name="Номер телефона" id="private-phone">
+                </div>
+                <div class="default-input_wrapper hide">
+                    <span>Код подтверждения</span>
+                    <input type="tel" class="default-input code" name="Код подтвержения" id="private-code">
+                </div>
+                <div class="submit_wrapper">
+                    <div class="sms-send hide">
+                        <span class="sms-send_title">Статус смс сообщения:</span>
+                        <span class="sms-send_status">Доставлено</span>
+                    </div>
+                    <button type="submit" form="private-modal_form" value="submit"
+                        class="btn btn-orange add-phone">Получить
+                        код</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="private-modal modal" id="code_modal">
+        <div class="modal_wrapper code-modal_wrapper">
+            <h2 class="modal_title extrabold">Ввести пригласительный код</h2>
+            <form class="code-modal_form modal_form" name="code-modal_form" id="code-modal_form" method="POST"
+                action="">
+                <div class="default-input_wrapper">
+                    <span>Пригласительный код</span>
+                    <input type="text" class="default-input w-100" name="Пригласительный код" id="code-bonus">
+                </div>
+                <div class="submit_wrapper">
+                    <button type="submit" form="code-modal_form" value="submit"
+                        class="btn btn-orange">Активировать</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="address-modal modal" id="modal-address_add">
+        <div class="modal_wrapper address-modal_wrapper">
+            <h2 class="modal_title extrabold">Добавить адрес</h2>
+            <form class="address-modal_form modal_form flex-block" name="address-modal_form" id="address-modal_form"
+                method="POST" action="">
+                <div class="default-select_wrapper w-100">
+                    <span>Город</span>
+                    <select class="default-select">
+                        <option value="">Выберите город</option>
+                        <option value="Киев">Киев, Киевская область</option>
+                        <option value="Днепропетровск">Днепропетровск</option>
+                    </select>
+                </div>
+                <div class="default-select_wrapper w-100">
+                    <span>Улица</span>
+                    <select class="default-select">
+                        <option value="">Выберите улицу</option>
+                        <option value="Первая">Первая</option>
+                        <option value="Вторая">Вторая</option>
+                    </select>
+                </div>
+                <div class="default-input_wrapper w-50">
+                    <span>Дом</span>
+                    <input type="tel" class="default-input number w-100" name="Дом" id="address-house">
+                </div>
+                <div class="default-input_wrapper w-50">
+                    <span>Подъезд</span>
+                    <input type="tel" class="default-input number w-100" name="Подъезд" id="address-porch">
+                </div>
+                <div class="default-input_wrapper w-50">
+                    <span>Этаж</span>
+                    <input type="tel" class="default-input number w-100" name="Этаж" id="address-floor">
+                </div>
+                <div class="default-input_wrapper w-50">
+                    <span>Квартира</span>
+                    <input type="tel" class="default-input number w-100" name="Квартира" id="address-apart">
+                </div>
+                <div class="default-input_wrapper w-100">
+                    <span>Код домофона</span>
+                    <input type="tel" class="default-input number w-100" name="Код домофона" id="address-intercom">
+                </div>
+                <div class="default-input_wrapper w-100">
+                    <input type="checkbox" class="default-checkbox" name="Домофон это номер квартиры"
+                        id="address-intercom-ok">
+                    <label for="address-intercom-ok" class="default-checkbox_label">Домофон это номер квартиры</label>
+                </div>
+                <div class="submit_wrapper w-100">
+                    <button type="submit" form="address-modal_form" value="submit"
+                        class="btn btn-orange">Добавить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--Jquery 3.3.1-->
+    <script src="./js/librarys/jquery-3.3.1.min.js"></script>
+    <!--Select2 JS-->
+    <script src="./js/plugins/select2/select2.min.js"></script>
+    <!--Current-Device JS-->
+    <script src="./js/plugins/current-device/device.js"></script>
+    <!--Jquery Modal JS-->
+    <script src="./js/plugins/jquery.modal/jquery.modal.min.js"></script>
+    <!--InputMask JS-->
+    <script src="./js/plugins/inputmask/jquery.inputmask.min.js"></script>
+    <!--Animate JS-->
+    <script src="./js/plugins/animate/animate.min.js"></script>
+    <!--Script JS-->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

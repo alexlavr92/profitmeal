@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ProFitMeal - правильное питание с доставкой на дом</title>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta name="keywords" content="ProMeal">
+    <meta name="description" content="правильное питание с доставкой на дом">
+    <meta name="viewport"
+        content="minimum-scale=1.0, width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="320">
+    <link rel="icon" href="./media/icons/favicon.ico" type="image/x-icon">
+
+    <!-- Select2 CSS -->
+    <link rel="stylesheet" type="text/css" href="./css/plugins/select2.min.css">
+    <!-- Swiper-Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="./css/plugins/swiper.min.css">
+    <!--Modal CSS-->
+    <link rel="stylesheet" type="text/css" href="./css/plugins/jquery.modal.min.css">
+    <!-- ToolTipster CSS-->
+    <link rel="stylesheet" type="text/css" href="./css/plugins/tooltipster.bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/plugins/tooltipster-sideTip-shadow.min.css">
+    <!-- Normalize CSS-->
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css">
+    <!-- Fonts CSS-->
+    <link rel="stylesheet" type="text/css" href="./css/fonts.css">
+    <!-- FontAwesome CSS-->
+    <link rel="stylesheet" type="text/css" href="./fonts/font-awesome/css/font-awesome.min.css">
+    <!-- Animate CSS-->
+    <link rel="stylesheet" type="text/css" href="./css/plugins/animate.min.css">
+    <!-- Style CSS-->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body style="background-color: #f0f0f0">
+    <header class="not-index">
+        <div class="new-container">
+            <div class="header flex-block">
+                <a class="header_logo" href="/">
+                    <img src="./media/icons/logo.png" alt="ProFitMeal">
+                </a>
+                <div class="header_language">
+                    <select class="header_language-select default-select">
+                        <option value="RU">RU</option>
+                        <option value="UA">UA</option>
+                    </select>
+                </div>
+                <nav class="header_menu">
+                    <a class="header_menu-link active order" href="javascript: void(0)" count="2">Мои заказы</a>
+                    <a class="header_menu-link" href="javascript: void(0)" anchor="#menu">Заказать питание</a>
+                    <a class="header_menu-link" href="javascript: void(0)">История заказов</a>
+                </nav>
+                <div class="header_inprivate-wrapper flex-block">
+                    <div class="header_inprivate-profile">
+                        <span class="name">Дмитрий</span>
+                        <span class="email" title="dkarts@gmail.com">dkarts@gmail.com</span>
+                    </div>
+                    <a class="header_inprivate-link edit" href="javascript: void(0)">
+                        <img src="./media/icons/edit.png" alt="">
+                    </a>
+                    <a class="header_inprivate-link avatar" href="javascript: void(0)">
+                        <img src="./media/icons/avatar.png" alt="">
+                    </a>
+                    <a class="header_inprivate-link exit" href="javascript: void(0)">
+                        <img src="./media/icons/exit.png" alt="">
+                    </a>
+                </div>
+                <a href="javascript: void(0)" class="header_adaptive-menu-link"><span></span></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="new-container">
+            <h2 class="heading heading_black main-title">Список заказов</h2>
+        </div>
+        <section>
+            <div class="new-container">
+                <div class="orders">
+                    <div class="order-tabs_wrapper">
+                        <div class="order-tabs_items">
+                            <a href="javascript: void(0)" class="order-tab_item active">
+                                <div class="order-tab_item-img">
+                                    <img src="./media/img/superfit-mini.png" alt="">
+                                </div>
+                                <div class="order-tab_item-info">
+                                    <span class="item-name">Super Fit</span>
+                                    <span class="item-number">#34827</span>
+                                </div>
+                                <div class="order-tab_item-icon inprogress"></div>
+                            </a>
+                            <a href="javascript: void(0)" class="order-tab_item">
+                                <div class="order-tab_item-img">
+                                    <img src="./media/img/detox-min.png" alt="">
+                                </div>
+                                <div class="order-tab_item-info">
+                                    <span class="item-name">Detox</span>
+                                    <span class="item-number">#34826</span>
+                                </div>
+                                <div class="order-tab_item-icon inprogress"></div>
+                            </a>
+                            <a href="javascript: void(0)" class="order-tab_item">
+                                <div class="order-tab_item-img">
+                                    <img src="./media/img/power-mini.png" alt="">
+                                </div>
+                                <div class="order-tab_item-info">
+                                    <span class="item-name">Power</span>
+                                    <span class="item-number">#34826</span>
+                                </div>
+                                <div class="order-tab_item-icon okprogress"></div>
+                            </a>
+                            <a href="javascript: void(0)" class="order-tab_item">
+                                <div class="order-tab_item-img">
+                                    <img src="./media/img/superfit-mini.png" alt="">
+                                </div>
+                                <div class="order-tab_item-info">
+                                    <span class="item-name">Super Fit</span>
+                                    <span class="item-number">#34825</span>
+                                </div>
+                                <div class="order-tab_item-icon okprogress"></div>
+                            </a>
+                            <a href="javascript: void(0)" class="order-tab_item">
+                                <div class="order-tab_item-img">
+                                    <img src="./media/img/detox-min.png" alt="">
+                                </div>
+                                <div class="order-tab_item-info">
+                                    <span class="item-name">Detox</span>
+                                    <span class="item-number">#34824</span>
+                                </div>
+                                <div class="order-tab_item-icon okprogress"></div>
+                            </a>
+                            <a href="javascript: void(0)" class="order-tab_item">
+                                <div class="order-tab_item-img">
+                                    <img src="./media/img/power-mini.png" alt="">
+                                </div>
+                                <div class="order-tab_item-info">
+                                    <span class="item-name">Power</span>
+                                    <span class="item-number">#34823</span>
+                                </div>
+                                <div class="order-tab_item-icon okprogress"></div>
+                            </a>
+                            <a href="javascript: void(0)" class="order-tab_item">
+                                <div class="order-tab_item-img">
+                                    <img src="./media/img/superfit-mini.png" alt="">
+                                </div>
+                                <div class="order-tab_item-info">
+                                    <span class="item-name">Super Fit</span>
+                                    <span class="item-number">#34822</span>
+                                </div>
+                                <div class="order-tab_item-icon okprogress"></div>
+                            </a>
+                            <a href="javascript: void(0)" class="order-tab_item">
+                                <div class="order-tab_item-img">
+                                    <img src="./media/img/detox-min.png" alt="">
+                                </div>
+                                <div class="order-tab_item-info">
+                                    <span class="item-name">Detox</span>
+                                    <span class="item-number">#34821</span>
+                                </div>
+                                <div class="order-tab_item-icon okprogress"></div>
+                            </a>
+                            <a href="javascript: void(0)" class="order-tab_item">
+                                <div class="order-tab_item-img">
+                                    <img src="./media/img/power-mini.png" alt="">
+                                </div>
+                                <div class="order-tab_item-info">
+                                    <span class="item-name">Power</span>
+                                    <span class="item-number">#34820</span>
+                                </div>
+                                <div class="order-tab_item-icon okprogress"></div>
+                            </a>
+                        </div>
+                        <div class="order-btn order-btn_prev"><span></span></div>
+                        <div class="order-btn order-btn_next"><span></span></div>
+                    </div>
+                    <div class="order-contents_wrapper">
+                        <div class="order-content_item active">
+                            <div class="order-info_wrapper flex-block">
+                                <div class="width-30-perc order-main-info">
+                                    <div class="order-setting">
+                                        <span class="order-setting_name">Дата заказа:</span>
+                                        <span class="order-setting_value">07.04.2020</span>
+                                    </div>
+                                    <div class="order-setting">
+                                        <span class="order-setting_name">Кол-во дней доставки:</span>
+                                        <span class="order-setting_value">2</span>
+                                    </div>
+                                    <div class="order-setting">
+                                        <span class="order-setting_name">Статус заказа:</span>
+                                        <span class="order-setting_value">В обработке</span>
+                                    </div>
+                                    <div class="order-address">
+                                        <span class="order-setting_name">Адрес доставки по умолчанию:</span>
+                                        <div class="default-select_wrapper">
+                                            <select class="address-select default-select">
+                                                <option>Выберите адрес по-умолчанию</option>
+                                                <option value="Краснодар">Краснодар</option>
+                                                <option value="Москва">Москва</option>
+                                            </select>
+                                        </div>
+                                        <a href="#modal-address_add" class="order-address_add modal-open">Добавить
+                                            адрес<span></span></a>
+                                    </div>
+                                </div>
+                                <div class="width-30-perc order-params-info">
+                                    <div class="order-setting">
+                                        <span class="order-setting_name">Стоимость заказа:</span>
+                                        <span class="order-setting_value">380 грн.</span>
+                                    </div>
+                                    <div class="order-setting">
+                                        <span class="order-setting_name">Доступно бонусов:</span>
+                                        <span class="order-setting_value">150</span>
+                                    </div>
+                                    <div class="order-bonus">
+                                        <span class="order-setting_name">Списать бонусами:</span>
+                                        <div class="default-input_wrapper">
+                                            <input type="tel" class="default-input number" name="Введено бонусов"
+                                                id="bonus-input" placeholder="0" inputmode="verbatim">
+                                        </div>
+                                    </div>
+                                    <div class="order-setting card_payment">
+                                        <span class="order-setting_name">К оплате с карты:</span>
+                                        <span class="order-setting_value"><span>380</span> грн</span>
+                                    </div>
+                                </div>
+                                <div class="width-30-perc order-payment-info">
+                                    <div class="order-setting">
+                                        <span class="order-setting_name">Coстояние оплаты:</span>
+                                        <span class="order-setting_value nopayment">Не оплачено</span>
+                                    </div>
+                                    <div class="btn_wrapper text-center">
+                                        <a href="javascript: void(0)" class="btn btn-red">Оплатить</a>
+                                    </div>
+                                    <div class="btn_wrapper text-center">
+                                        <a href="javascript: void(0)" class="btn btn-border">Отменить заказ</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-main_wrapper">
+                                <div class="order-main_top flex-block">
+                                    <div class="order-main-tabs_wrapper flex-block">
+                                        <a href="javascript: void(0)" class="order-main-tab_item active flex-block">
+                                            <div class="order-main-tab_item--img">
+                                                <img src="./media/icons/menu-small.png" alt="">
+                                            </div>
+                                            <div class="order-main-tab_item--name">Меню</div>
+                                        </a>
+                                        <a href="javascript: void(0)" class="order-main-tab_item flex-block">
+                                            <div class="order-main-tab_item--img">
+                                                <img src="./media/icons/del.png" alt="">
+                                            </div>
+                                            <div class="order-main-tab_item--name">Доставка</div>
+                                        </a>
+                                    </div>
+                                    <div class="order-main-date_wrapper flex-block">
+                                        <a href="javascript: void(0)" class="date-btn date-btn_prev"></a>
+                                        <div class="date-item flex-block">
+                                            <div class="date-item_img">
+                                                <img src="./media/icons/date.png" alt="">
+                                            </div>
+                                            <span>8 апреля 2020</span>
+                                        </div>
+                                        <a href="javascript: void(0)" class="date-btn date-btn_next"></a>
+                                    </div>
+                                    <div class="order-main-value_wrapper">
+                                        <div class="order-main-value_item">
+                                            Белки <span>112</span>,
+                                        </div>
+                                        <div class="order-main-value_item">
+                                            Жиры <span>38</span>,
+                                        </div>
+                                        <div class="order-main-value_item">
+                                            Углеводы <span>102</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-main-content_wrapper">
+                                    <div class="order-main-content_item active order-main-menu">
+                                        <div class="order-menu_item flex-block">
+                                            <div class="order-menu_item-info">
+                                                <div class="order-menu_item-info--img">
+                                                    <img src="./media/img/menu-item1.png" alt="">
+                                                </div>
+                                                <div class="order-menu_item-info--description">
+                                                    <div class="title">Завтрак</div>
+                                                    <div class="text">Фирменный шоколадно-кокосовый торт. Овсяная каша с
+                                                        черникой</div>
+                                                </div>
+                                            </div>
+                                            <div class="order-menu_item-rating">
+                                                <span>Оцените блюдо</span>
+                                                <div class="rating-area">
+                                                    <span class="rating-area_item"><i
+                                                            class="fa fa-star fa-fw"></i></span>
+                                                    <span class="rating-area_item"><i
+                                                            class="fa fa-star fa-fw"></i></span>
+                                                    <span class="rating-area_item"><i
+                                                            class="fa fa-star fa-fw"></i></span>
+                                                    <span class="rating-area_item"><i
+                                                            class="fa fa-star fa-fw"></i></span>
+                                                    <span class="rating-area_item"><i
+                                                            class="fa fa-star fa-fw"></i></span>
+                                                </div>
+                                                <div class="order-menu_item-rating--count">
+                                                    <span>3.5</span> /
+                                                    <span>7</span>
+                                                </div>
+                                            </div>
+                                            <div class="order-menu_item-weight">
+                                                <span>315</span> грамм
+                                            </div>
+                                        </div>
+                                        <div class="order-menu_item flex-block">
+                                            <div class="order-menu_item-info">
+                                                <div class="order-menu_item-info--img">
+                                                    <img src="./media/img/menu-item2.png" alt="">
+                                                </div>
+                                                <div class="order-menu_item-info--description">
+                                                    <div class="title">Второй завтрак</div>
+                                                    <div class="text">Фирменный шоколадно-кокосовый торт. Овсяная каша с
+                                                        черникой</div>
+                                                </div>
+                                            </div>
+                                            <div class="order-menu_item-rating">
+                                                <span>Оцените блюдо</span>
+                                                <div class="rating-area">
+                                                    <span class="rating-area_item"><i
+                                                            class="fa fa-star fa-fw"></i></span>
+                                                    <span class="rating-area_item"><i
+                                                            class="fa fa-star fa-fw"></i></span>
+                                                    <span class="rating-area_item"><i
+                                                            class="fa fa-star fa-fw"></i></span>
+                                                    <span class="rating-area_item"><i
+                                                            class="fa fa-star fa-fw"></i></span>
+                                                    <span class="rating-area_item"><i
+                                                            class="fa fa-star fa-fw"></i></span>
+                                                </div>
+                                                <div class="order-menu_item-rating--count">
+                                                    <span>4.0</span> /
+                                                    <span>2545</span>
+                                                </div>
+                                            </div>
+                                            <div class="order-menu_item-weight">
+                                                <span>1315</span> грамм
+                                            </div>
+                                        </div>
+                                        <div class="order-menu_item flex-block">
+                                            <div class="order-menu_item-info">
+                                                <div class="order-menu_item-info--img">
+                                                    <img src="./media/img/menu-item3.png" alt="">
+                                                </div>
+                                                <div class="order-menu_item-info--description">
+                                                    <div class="title">Обуд</div>
+                                                    <div class="text">Фирменный шоколадно-кокосовый торт. Овсяная каша с
+                                                        черникой</div>
+                                                </div>
+                                            </div>
+                                            <div class="order-menu_item-rating">
+                                                <span>Оцените блюдо</span>
+                                                <div class="rating-area">
+                                                    <span class="rating-area_item"><i
+                                                            class="fa fa-star fa-fw"></i></span>
+                                                    <span class="rating-area_item"><i
+                                                            class="fa fa-star fa-fw"></i></span>
+                                                    <span class="rating-area_item"><i
+                                                            class="fa fa-star fa-fw"></i></span>
+                                                    <span class="rating-area_item"><i
+                                                            class="fa fa-star fa-fw"></i></span>
+                                                    <span class="rating-area_item"><i
+                                                            class="fa fa-star fa-fw"></i></span>
+                                                </div>
+                                                <div class="order-menu_item-rating--count">
+                                                    <span>2.0</span> /
+                                                    <span>120</span>
+                                                </div>
+                                            </div>
+                                            <div class="order-menu_item-weight">
+                                                <span>125</span> грамм
+                                            </div>
+                                        </div>
+                                        <div class="order-menu_item flex-block">
+                                            <div class="order-menu_item-info">
+                                                <div class="order-menu_item-info--img">
+                                                    <img src="./media/img/menu-item1.png" alt="">
+                                                </div>
+                                                <div class="order-menu_item-info--description">
+                                                    <div class="title">Ужин</div>
+                                                    <div class="text">Фирменный шоколадно-кокосовый торт. Овсяная каша с
+                                                        черникой</div>
+                                                </div>
+                                            </div>
+                                            <div class="order-menu_item-rating">
+                                                <span>Оцените блюдо</span>
+                                                <div class="rating-area">
+                                                    <span class="rating-area_item"><i
+                                                            class="fa fa-star fa-fw"></i></span>
+                                                    <span class="rating-area_item"><i
+                                                            class="fa fa-star fa-fw"></i></span>
+                                                    <span class="rating-area_item"><i
+                                                            class="fa fa-star fa-fw"></i></span>
+                                                    <span class="rating-area_item"><i
+                                                            class="fa fa-star fa-fw"></i></span>
+                                                    <span class="rating-area_item"><i
+                                                            class="fa fa-star fa-fw"></i></span>
+                                                </div>
+                                                <div class="order-menu_item-rating--count">
+                                                    <span>1.0</span> /
+                                                    <span>23454</span>
+                                                </div>
+                                            </div>
+                                            <div class="order-menu_item-weight">
+                                                <span>250</span> грамм
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="order-main-content_item order-main-delivery">
+                                        <div class="order-main-delivery_item flex-block">
+                                            <div class="order-main-delivery_item--info">
+                                                Доставка 1
+                                            </div>
+                                            <div class="order-main-delivery_item--time">
+                                                Время:
+                                                <span>09:00 Среда (08.04.2020)</span>
+                                            </div>
+                                            <div class="order-main-delivery_item--address">
+                                                Адрес:
+                                                <span>г. Днепропетровск, ул. Такая, д. 1, кв. 22</span>
+                                            </div>
+                                            <div class="btn_wrapper">
+                                                <a href="javascript: void(0)" class="link-green">
+                                                    <img src="./media/icons/edit-green.png" alt="">
+                                                    <span>Изменить</span>
+                                                </a>
+                                            </div>
+                                            <div class="order-main-delivery_item--edit flex-block">
+                                                <div class="default-select_wrapper time">
+                                                    <select class="default-select default-select_edit">
+                                                        <option>Выберите время доставки</opttion>
+                                                        <option>10:00 Среда (08.04.2020)</option>
+                                                        <option>11:00 Среда (08.04.2020)</option>
+                                                    </select>
+                                                </div>
+                                                <div class="default-select_wrapper address">
+                                                    <select class="default-select default-select_edit">
+                                                        <option>Выберите адрес</opttion>
+                                                        <option> ул. 1-ая, д.22</option>
+                                                        <option>ул. 2ая, д.25</option>
+                                                    </select>
+                                                    <a href="#modal-address_add"
+                                                        class="order-address_add modal-open">Добавить
+                                                        адрес<span></span></a>
+                                                    <div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="order-main-delivery_item flex-block">
+                                            <div class="order-main-delivery_item--info">
+                                                Доставка 2
+                                            </div>
+                                            <div class="order-main-delivery_item--time">
+                                                Время:
+                                                <span>09:00 Среда (09.04.2020)</span>
+                                            </div>
+                                            <div class="order-main-delivery_item--address">
+                                                Адрес:
+                                                <span>г. Днепропетровск, ул. Такая, д. 1, кв. 22</span>
+                                            </div>
+                                            <div class="btn_wrapper">
+                                                <a href="javascript: void(0)" class="link-green">
+                                                    <img src="./media/icons/edit-green.png" alt="">
+                                                    <span>Изменить</span>
+                                                </a>
+                                            </div>
+                                            <div class="order-main-delivery_item--edit flex-block">
+                                                <div class="default-select_wrapper time">
+                                                    <select class="default-select default-select_edit">
+                                                        <option>Выберите время доставки</opttion>
+                                                        <option>10:00 Среда (08.04.2020)</option>
+                                                        <option>11:00 Среда (08.04.2020)</option>
+                                                    </select>
+                                                </div>
+                                                <div class="default-select_wrapper address">
+                                                    <select class="default-select default-select_edit">
+                                                        <option>Выберите адрес</opttion>
+                                                        <option> ул. 1-ая, д.22</option>
+                                                        <option>ул. 2ая, д.25</option>
+                                                    </select>
+                                                    <a href="#modal-address_add"
+                                                        class="order-address_add modal-open">Добавить
+                                                        адрес<span></span></a>
+                                                    <div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="order-main-delivery_item flex-block">
+                                            <div class="order-main-delivery_item--info">
+                                                Доставка 3
+                                            </div>
+                                            <div class="order-main-delivery_item--time">
+                                                Время:
+                                                <span>09:00 Среда (09.04.2020)</span>
+                                            </div>
+                                            <div class="order-main-delivery_item--address">
+                                                Адрес:
+                                                <span>г. Днепропетровск, ул. Такая, д. 1, кв. 22</span>
+                                            </div>
+                                            <div class="btn_wrapper">
+                                                <a href="javascript: void(0)" class="link-green">
+                                                    <img src="./media/icons/edit-green.png" alt="">
+                                                    <span>Изменить</span>
+                                                </a>
+                                            </div>
+                                            <div class="order-main-delivery_item--edit flex-block">
+                                                <div class="default-select_wrapper time">
+                                                    <select class="default-select default-select_edit">
+                                                        <option>Выберите время доставки</opttion>
+                                                        <option>10:00 Среда (08.04.2020)</option>
+                                                        <option>11:00 Среда (08.04.2020)</option>
+                                                    </select>
+                                                </div>
+                                                <div class="default-select_wrapper address">
+                                                    <select class="default-select default-select_edit">
+                                                        <option>Выберите адрес</opttion>
+                                                        <option> ул. 1-ая, д.22</option>
+                                                        <option>ул. 2ая, д.25</option>
+                                                    </select>
+                                                    <a href="#modal-address_add"
+                                                        class="order-address_add modal-open">Добавить
+                                                        адрес<span></span></a>
+                                                    <div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="order-main-delivery_item flex-block">
+                                            <div class="order-main-delivery_item--info">
+                                                Доставка 4
+                                            </div>
+                                            <div class="order-main-delivery_item--time">
+                                                Время:
+                                                <span>09:00 Среда (09.04.2020)</span>
+                                            </div>
+                                            <div class="order-main-delivery_item--address">
+                                                Адрес:
+                                                <span>г. Днепропетровск, ул. Такая, д. 1, кв. 22</span>
+                                            </div>
+                                            <div class="btn_wrapper">
+                                                <a href="javascript: void(0)" class="link-green">
+                                                    <img src="./media/icons/edit-green.png" alt="">
+                                                    <span>Изменить</span>
+                                                </a>
+                                            </div>
+                                            <div class="order-main-delivery_item--edit flex-block">
+                                                <div class="default-select_wrapper time">
+                                                    <select class="default-select default-select_edit">
+                                                        <option>Выберите время доставки</opttion>
+                                                        <option>10:00 Среда (08.04.2020)</option>
+                                                        <option>11:00 Среда (08.04.2020)</option>
+                                                    </select>
+                                                </div>
+                                                <div class="default-select_wrapper address">
+                                                    <select class="default-select default-select_edit">
+                                                        <option>Выберите адрес</opttion>
+                                                        <option> ул. 1-ая, д.22</option>
+                                                        <option>ул. 2ая, д.25</option>
+                                                    </select>
+                                                    <a href="#modal-address_add"
+                                                        class="order-address_add modal-open">Добавить
+                                                        адрес<span></span></a>
+                                                    <div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-content_item">
+                            <div class="order-info_wrapper flex-block">
+                                <div class="width-30-perc order-main-info">
+                                    <div class="order-setting">
+                                        <span class="order-setting_name">Дата заказа:</span>
+                                        <span class="order-setting_value">07.05.2020</span>
+                                    </div>
+                                    <div class="order-setting">
+                                        <span class="order-setting_name">Кол-во дней доставки:</span>
+                                        <span class="order-setting_value">2</span>
+                                    </div>
+                                    <div class="order-setting">
+                                        <span class="order-setting_name">Статус заказа:</span>
+                                        <span class="order-setting_value">В обработке</span>
+                                    </div>
+                                    <div class="order-address">
+                                        <span class="order-setting_name">Адрес доставки по умолчанию:</span>
+                                        <div class="default-select_wrapper">
+                                            <select class="address-select default-select">
+                                                <option>Выберите адрес по-умолчанию</option>
+                                                <option value="Краснодар">Краснодар</option>
+                                                <option value="Москва">Москва</option>
+                                            </select>
+                                        </div>
+                                        <a href="#modal-address_add" class="order-address_add modal-open">Добавить
+                                            адрес<span></span></a>
+                                    </div>
+                                </div>
+                                <div class="width-30-perc order-params-info">
+                                    <div class="order-setting">
+                                        <span class="order-setting_name">Стоимость заказа:</span>
+                                        <span class="order-setting_value">380 грн.</span>
+                                    </div>
+                                    <div class="order-setting">
+                                        <span class="order-setting_name">Доступно бонусов:</span>
+                                        <span class="order-setting_value">150</span>
+                                    </div>
+                                    <div class="order-bonus">
+                                        <span class="order-setting_name">Списать бонусами:</span>
+                                        <div class="default-input_wrapper">
+                                            <input type="tel" class="default-input number" name="Введено бонусов"
+                                                id="bonus-input" placeholder="0" inputmode="verbatim">
+                                        </div>
+                                    </div>
+                                    <div class="order-setting card_payment">
+                                        <span class="order-setting_name">К оплате с карты:</span>
+                                        <span class="order-setting_value"><span>380</span> грн</span>
+                                    </div>
+                                </div>
+                                <div class="width-30-perc order-payment-info">
+                                    <div class="order-setting">
+                                        <span class="order-setting_name">Coстояние оплаты:</span>
+                                        <span class="order-setting_value nopayment">Не оплачено</span>
+                                    </div>
+                                    <div class="btn_wrapper text-center">
+                                        <a href="javascript: void(0)" class="btn btn-red">Оплатить</a>
+                                    </div>
+                                    <div class="btn_wrapper text-center">
+                                        <a href="javascript: void(0)" class="btn btn-border">Отменить заказ</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-main_wrapper">
+                                <div class="order-main_top flex-block">
+                                    <div class="order-main-tabs_wrapper flex-block">
+                                        <a href="javascript: void(0)" class="order-main-tab_item active flex-block">
+                                            <div class="order-main-tab_item--img">
+                                                <img src="./media/icons/menu-small.png" alt="">
+                                            </div>
+                                            <div class="order-main-tab_item--name">Меню</div>
+                                        </a>
+                                        <a href="javascript: void(0)" class="order-main-tab_item flex-block">
+                                            <div class="order-main-tab_item--img">
+                                                <img src="./media/icons/del.png" alt="">
+                                            </div>
+                                            <div class="order-main-tab_item--name">Доставка</div>
+                                        </a>
+                                    </div>
+                                    <div class="order-main-date_wrapper flex-block">
+                                        <a href="javascript: void(0)" class="date-btn date-btn_prev"></a>
+                                        <div class="date-item flex-block">
+                                            <div class="date-item_img">
+                                                <img src="./media/icons/date.png" alt="">
+                                            </div>
+                                            <span>8 апреля 2020</span>
+                                        </div>
+                                        <a href="javascript: void(0)" class="date-btn date-btn_next"></a>
+                                    </div>
+                                    <div class="order-main-value_wrapper">
+                                        <div class="order-main-value_item">
+                                            Белки <span>112</span>,
+                                        </div>
+                                        <div class="order-main-value_item">
+                                            Жиры <span>38</span>,
+                                        </div>
+                                        <div class="order-main-value_item">
+                                            Углеводы <span>102</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-main-content_wrapper">
+                                    <div class="order-main-content_item active order-main-menu">
+                                        <div class="order-menu_item flex-block">
+                                            <div class="order-menu_item-info">
+                                                <div class="order-menu_item-info--img">
+                                                    <img src="./media/img/menu-item1.png" alt="">
+                                                </div>
+                                                <div class="order-menu_item-info--description">
+                                                    <div class="title">Завтрак</div>
+                                                    <div class="text">Фирменный шоколадно-кокосовый торт. Овсяная каша с
+                                                        черникой</div>
+                                                </div>
+                                            </div>
+                                            <div class="order-menu_item-rating">
+                                                <span>Оцените блюдо</span>
+                                                <div class="rating-area">
+                                                    <span class="rating-area_item"><i
+                                                            class="fa fa-star fa-fw"></i></span>
+                                                    <span class="rating-area_item"><i
+                                                            class="fa fa-star fa-fw"></i></span>
+                                                    <span class="rating-area_item"><i
+                                                            class="fa fa-star fa-fw"></i></span>
+                                                    <span class="rating-area_item"><i
+                                                            class="fa fa-star fa-fw"></i></span>
+                                                    <span class="rating-area_item"><i
+                                                            class="fa fa-star fa-fw"></i></span>
+                                                </div>
+                                                <div class="order-menu_item-rating--count">
+                                                    <span>3.5</span> /
+                                                    <span>7</span>
+                                                </div>
+                                            </div>
+                                            <div class="order-menu_item-weight">
+                                                <span>315</span> грамм
+                                            </div>
+                                        </div>
+                                        <div class="order-menu_item flex-block">
+                                            <div class="order-menu_item-info">
+                                                <div class="order-menu_item-info--img">
+                                                    <img src="./media/img/menu-item2.png" alt="">
+                                                </div>
+                                                <div class="order-menu_item-info--description">
+                                                    <div class="title">Второй завтрак</div>
+                                                    <div class="text">Фирменный шоколадно-кокосовый торт. Овсяная каша с
+                                                        черникой</div>
+                                                </div>
+                                            </div>
+                                            <div class="order-menu_item-rating">
+                                                <span>Оцените блюдо</span>
+                                                <div class="rating-area">
+                                                    <span class="rating-area_item"><i
+                                                            class="fa fa-star fa-fw"></i></span>
+                                                    <span class="rating-area_item"><i
+                                                            class="fa fa-star fa-fw"></i></span>
+                                                    <span class="rating-area_item"><i
+                                                            class="fa fa-star fa-fw"></i></span>
+                                                    <span class="rating-area_item"><i
+                                                            class="fa fa-star fa-fw"></i></span>
+                                                    <span class="rating-area_item"><i
+                                                            class="fa fa-star fa-fw"></i></span>
+                                                </div>
+                                                <div class="order-menu_item-rating--count">
+                                                    <span>4.0</span> /
+                                                    <span>2545</span>
+                                                </div>
+                                            </div>
+                                            <div class="order-menu_item-weight">
+                                                <span>1315</span> грамм
+                                            </div>
+                                        </div>
+                                        <div class="order-menu_item flex-block">
+                                            <div class="order-menu_item-info">
+                                                <div class="order-menu_item-info--img">
+                                                    <img src="./media/img/menu-item3.png" alt="">
+                                                </div>
+                                                <div class="order-menu_item-info--description">
+                                                    <div class="title">Обуд</div>
+                                                    <div class="text">Фирменный шоколадно-кокосовый торт. Овсяная каша с
+                                                        черникой</div>
+                                                </div>
+                                            </div>
+                                            <div class="order-menu_item-rating">
+                                                <span>Оцените блюдо</span>
+                                                <div class="rating-area">
+                                                    <span class="rating-area_item"><i
+                                                            class="fa fa-star fa-fw"></i></span>
+                                                    <span class="rating-area_item"><i
+                                                            class="fa fa-star fa-fw"></i></span>
+                                                    <span class="rating-area_item"><i
+                                                            class="fa fa-star fa-fw"></i></span>
+                                                    <span class="rating-area_item"><i
+                                                            class="fa fa-star fa-fw"></i></span>
+                                                    <span class="rating-area_item"><i
+                                                            class="fa fa-star fa-fw"></i></span>
+                                                </div>
+                                                <div class="order-menu_item-rating--count">
+                                                    <span>2.0</span> /
+                                                    <span>120</span>
+                                                </div>
+                                            </div>
+                                            <div class="order-menu_item-weight">
+                                                <span>125</span> грамм
+                                            </div>
+                                        </div>
+                                        <div class="order-menu_item flex-block">
+                                            <div class="order-menu_item-info">
+                                                <div class="order-menu_item-info--img">
+                                                    <img src="./media/img/menu-item1.png" alt="">
+                                                </div>
+                                                <div class="order-menu_item-info--description">
+                                                    <div class="title">Ужин</div>
+                                                    <div class="text">Фирменный шоколадно-кокосовый торт. Овсяная каша с
+                                                        черникой</div>
+                                                </div>
+                                            </div>
+                                            <div class="order-menu_item-rating">
+                                                <span>Оцените блюдо</span>
+                                                <div class="rating-area">
+                                                    <span class="rating-area_item"><i
+                                                            class="fa fa-star fa-fw"></i></span>
+                                                    <span class="rating-area_item"><i
+                                                            class="fa fa-star fa-fw"></i></span>
+                                                    <span class="rating-area_item"><i
+                                                            class="fa fa-star fa-fw"></i></span>
+                                                    <span class="rating-area_item"><i
+                                                            class="fa fa-star fa-fw"></i></span>
+                                                    <span class="rating-area_item"><i
+                                                            class="fa fa-star fa-fw"></i></span>
+                                                </div>
+                                                <div class="order-menu_item-rating--count">
+                                                    <span>1.0</span> /
+                                                    <span>23454</span>
+                                                </div>
+                                            </div>
+                                            <div class="order-menu_item-weight">
+                                                <span>250</span> грамм
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="order-main-content_item order-main-delivery">
+                                        <div class="order-main-delivery_item flex-block">
+                                            <div class="order-main-delivery_item--info">
+                                                Доставка 1
+                                            </div>
+                                            <div class="order-main-delivery_item--time">
+                                                Время:
+                                                <span>09:00 Среда (08.04.2020)</span>
+                                            </div>
+                                            <div class="order-main-delivery_item--address">
+                                                Адрес:
+                                                <span>г. Днепропетровск, ул. Такая, д. 1, кв. 22</span>
+                                            </div>
+                                            <div class="btn_wrapper">
+                                                <a href="javascript: void(0)" class="link-green">
+                                                    <img src="./media/icons/edit-green.png" alt="">
+                                                    <span>Изменить</span>
+                                                </a>
+                                            </div>
+                                            <div class="order-main-delivery_item--edit flex-block">
+                                                <div class="default-select_wrapper time">
+                                                    <select class="default-select default-select_edit">
+                                                        <option>Выберите время доставки</opttion>
+                                                        <option>10:00 Среда (08.04.2020)</option>
+                                                        <option>11:00 Среда (08.04.2020)</option>
+                                                    </select>
+                                                </div>
+                                                <div class="default-select_wrapper address">
+                                                    <select class="default-select default-select_edit">
+                                                        <option>Выберите адрес</opttion>
+                                                        <option> ул. 1-ая, д.22</option>
+                                                        <option>ул. 2ая, д.25</option>
+                                                    </select>
+                                                    <a href="#modal-address_add"
+                                                        class="order-address_add modal-open">Добавить
+                                                        адрес<span></span></a>
+                                                    <div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="order-main-delivery_item flex-block">
+                                            <div class="order-main-delivery_item--info">
+                                                Доставка 2
+                                            </div>
+                                            <div class="order-main-delivery_item--time">
+                                                Время:
+                                                <span>09:00 Среда (09.04.2020)</span>
+                                            </div>
+                                            <div class="order-main-delivery_item--address">
+                                                Адрес:
+                                                <span>г. Днепропетровск, ул. Такая, д. 1, кв. 22</span>
+                                            </div>
+                                            <div class="btn_wrapper">
+                                                <a href="javascript: void(0)" class="link-green">
+                                                    <img src="./media/icons/edit-green.png" alt="">
+                                                    <span>Изменить</span>
+                                                </a>
+                                            </div>
+                                            <div class="order-main-delivery_item--edit flex-block">
+                                                <div class="default-select_wrapper time">
+                                                    <select class="default-select default-select_edit">
+                                                        <option>Выберите время доставки</opttion>
+                                                        <option>10:00 Среда (08.04.2020)</option>
+                                                        <option>11:00 Среда (08.04.2020)</option>
+                                                    </select>
+                                                </div>
+                                                <div class="default-select_wrapper address">
+                                                    <select class="default-select default-select_edit">
+                                                        <option>Выберите адрес</opttion>
+                                                        <option> ул. 1-ая, д.22</option>
+                                                        <option>ул. 2ая, д.25</option>
+                                                    </select>
+                                                    <a href="#modal-address_add"
+                                                        class="order-address_add modal-open">Добавить
+                                                        адрес<span></span></a>
+                                                    <div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="order-main-delivery_item flex-block">
+                                            <div class="order-main-delivery_item--info">
+                                                Доставка 3
+                                            </div>
+                                            <div class="order-main-delivery_item--time">
+                                                Время:
+                                                <span>09:00 Среда (09.04.2020)</span>
+                                            </div>
+                                            <div class="order-main-delivery_item--address">
+                                                Адрес:
+                                                <span>г. Днепропетровск, ул. Такая, д. 1, кв. 22</span>
+                                            </div>
+                                            <div class="btn_wrapper">
+                                                <a href="javascript: void(0)" class="link-green">
+                                                    <img src="./media/icons/edit-green.png" alt="">
+                                                    <span>Изменить</span>
+                                                </a>
+                                            </div>
+                                            <div class="order-main-delivery_item--edit flex-block">
+                                                <div class="default-select_wrapper time">
+                                                    <select class="default-select default-select_edit">
+                                                        <option>Выберите время доставки</opttion>
+                                                        <option>10:00 Среда (08.04.2020)</option>
+                                                        <option>11:00 Среда (08.04.2020)</option>
+                                                    </select>
+                                                </div>
+                                                <div class="default-select_wrapper address">
+                                                    <select class="default-select default-select_edit">
+                                                        <option>Выберите адрес</opttion>
+                                                        <option> ул. 1-ая, д.22</option>
+                                                        <option>ул. 2ая, д.25</option>
+                                                    </select>
+                                                    <a href="#modal-address_add"
+                                                        class="order-address_add modal-open">Добавить
+                                                        адрес<span></span></a>
+                                                    <div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="order-main-delivery_item flex-block">
+                                            <div class="order-main-delivery_item--info">
+                                                Доставка 8
+                                            </div>
+                                            <div class="order-main-delivery_item--time">
+                                                Время:
+                                                <span>09:00 Среда (09.04.2020)</span>
+                                            </div>
+                                            <div class="order-main-delivery_item--address">
+                                                Адрес:
+                                                <span>г. Днепропетровск, ул. Такая, д. 1, кв. 22</span>
+                                            </div>
+                                            <div class="btn_wrapper">
+                                                <a href="javascript: void(0)" class="link-green">
+                                                    <img src="./media/icons/edit-green.png" alt="">
+                                                    <span>Изменить</span>
+                                                </a>
+                                            </div>
+                                            <div class="order-main-delivery_item--edit flex-block">
+                                                <div class="default-select_wrapper time">
+                                                    <select class="default-select default-select_edit">
+                                                        <option>Выберите время доставки</opttion>
+                                                        <option>10:00 Среда (08.04.2020)</option>
+                                                        <option>11:00 Среда (08.04.2020)</option>
+                                                    </select>
+                                                </div>
+                                                <div class="default-select_wrapper address">
+                                                    <select class="default-select default-select_edit">
+                                                        <option>Выберите адрес</opttion>
+                                                        <option> ул. 1-ая, д.22</option>
+                                                        <option>ул. 2ая, д.25</option>
+                                                    </select>
+                                                    <a href="#modal-address_add"
+                                                        class="order-address_add modal-open">Добавить
+                                                        адрес<span></span></a>
+                                                    <div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-content_item">
+
+                        </div>
+                        <div class="order-content_item">
+
+                        </div>
+                        <div class="order-content_item">
+
+                        </div>
+                        <div class="order-content_item">
+
+                        </div>
+                        <div class="order-content_item">
+
+                        </div>
+                        <div class="order-content_item">
+
+                        </div>
+                        <div class="order-content_item">
+
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- <section></section> -->
+    </main>
+    <footer style="background-image: url(./media/img/footer-bg.png);">
+        <div class="new-container">
+            <div class="footer-top flex-block wow fadeInUp animated" data-wow-duration="1s" data-wow-delay="0"
+                data-wow-offset="50">
+                <div class="footer-copyright">
+                    <div class="footer-title">© 2020 ProfitMeal</div>
+                    <span>Cбалансированное питание для всех!</span>
+                </div>
+                <div class="footer-address">
+                    <div class="footer-title">Адрес</div>
+                    <span>г. Днепропетровск<br>
+                        ул. Шевченко, 34а</span>
+                </div>
+                <div class="footer-contacts flex-block">
+                    <div class="footer-title">Контакты</div>
+                    <a href="tel: 0933434343" class="footer-contacts_tel">(093) 343-43-43</a>
+                    <a href="mailto: profitmeal@gmail.com" class="footer-contacts_email">profitmeal@gmail.com</a>
+                </div>
+                <div class="footer-socials">
+                    <div class="footer-title">Следите за нами</div>
+                    <a href="javascript: void(0)" class="footer-socials_item">
+                        <img src="./media/icons/socials/vk.svg" alt="">
+                    </a>
+                    <a href="javascript: void(0)" class="footer-socials_item">
+                        <img src="./media/icons/socials/fb.svg" alt="">
+                    </a>
+                    <a href="javascript: void(0)" class="footer-socials_item">
+                        <img src="./media/icons/socials/instagram.svg" alt="">
+                    </a>
+                    <a href="javascript: void(0)" class="footer-socials_item">
+                        <img src="./media/icons/socials/twitter.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <img src="./media/icons/payment.png" alt="">
+                <a href="javascript: void(0)" class="link-green">Публичная оферта</a>
+                <a href="javascript: void(0)" class="link-white">Пользовательское соглашение</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="address-modal modal" id="modal-address_add">
+        <div class="modal_wrapper address-modal_wrapper">
+            <h2 class="modal_title extrabold">Добавить адрес</h2>
+            <form class="address-modal_form modal_form flex-block" name="address-modal_form" id="address-modal_form"
+                method="POST" action="">
+                <div class="default-select_wrapper w-100">
+                    <span>Город</span>
+                    <select class="default-select">
+                        <option value="">Выберите город</option>
+                        <option value="Киев">Киев, Киевская область</option>
+                        <option value="Днепропетровск">Днепропетровск</option>
+                    </select>
+                </div>
+                <div class="default-select_wrapper w-100">
+                    <span>Улица</span>
+                    <select class="default-select default-select-street">
+                        <option value="">Выберите улицу</option>
+                        <option value="Первая">Первая</option>
+                        <option value="Вторая">Вторая</option>
+                    </select>
+                </div>
+                <div class="default-input_wrapper w-50">
+                    <span>Дом</span>
+                    <input type="tel" class="default-input number w-100" name="Дом" id="address-house">
+                </div>
+                <div class="default-input_wrapper w-50">
+                    <span>Подъезд</span>
+                    <input type="tel" class="default-input number w-100" name="Подъезд" id="address-porch">
+                </div>
+                <div class="default-input_wrapper w-50">
+                    <span>Этаж</span>
+                    <input type="tel" class="default-input number w-100" name="Этаж" id="address-floor">
+                </div>
+                <div class="default-input_wrapper w-50">
+                    <span>Квартира</span>
+                    <input type="tel" class="default-input number w-100" name="Квартира" id="address-apart">
+                </div>
+                <div class="default-input_wrapper w-100">
+                    <span>Код домофона</span>
+                    <input type="tel" class="default-input number w-100" name="Код домофона" id="address-intercom">
+                </div>
+                <div class="default-input_wrapper w-100">
+                    <input type="checkbox" class="default-checkbox" name="Домофон это номер квартиры"
+                        id="address-intercom-ok">
+                    <label for="address-intercom-ok" class="default-checkbox_label">Домофон это номер квартиры</label>
+                </div>
+                <div class="submit_wrapper w-100">
+                    <button type="submit" form="address-modal_form" value="submit"
+                        class="btn btn-orange">Добавить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--Jquery 3.3.1-->
+    <script src="./js/librarys/jquery-3.3.1.min.js"></script>
+    <!--Select2 JS-->
+    <script src="./js/plugins/select2/select2.min.js"></script>
+    <script src="./js/plugins/select2/i18n/ru.js"></script>
+    <script src="./js/plugins/select2/i18n/uk.js"></script>
+    <!--Swiper-Slider JS-->
+    <!-- <script src="./js/plugins/swiper/swiper.min.js"></script> -->
+    <!--Current-Device JS-->
+    <script src="./js/plugins/current-device/device.js"></script>
+    <!--Jquery Modal JS-->
+    <script src="./js/plugins/jquery.modal/jquery.modal.min.js"></script>
+    <!--InputMask JS-->
+    <script src="./js/plugins/inputmask/jquery.inputmask.min.js"></script>
+    <!--ToolTipster JS-->
+    <!--  <script src="./js/plugins/tooltipster/tooltipster.bundle.min.js"></script> -->
+    <!--Animate JS-->
+    <script src="./js/plugins/animate/animate.min.js"></script>
+    <!--Script JS-->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
